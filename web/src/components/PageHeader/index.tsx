@@ -10,8 +10,7 @@ interface PageHeaderProps {
   title: string;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = (props) => {
-  const { title, children } = props;
+const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => {
   return (
     <header className="page-header">
       <div className="top-bar-container">

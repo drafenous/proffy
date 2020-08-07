@@ -15,12 +15,6 @@ function TeacherList() {
   const [week_day, setWeekDay] = useState<string>("");
   const [time, setTime] = useState<string>("");
 
-  // async function handleSearchTeachers() {
-  //   const params = { subject, week_day, time };
-  //   const response = await api.get("/classes", { params });
-  //   setTeachers(response.data);
-  // }
-
   const handleSearchTeachers = useCallback(async () => {
     const params = { subject, week_day, time };
     const response = await api.get("/classes", { params });
